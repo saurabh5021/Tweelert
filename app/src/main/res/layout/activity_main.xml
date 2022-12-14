@@ -75,7 +75,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/signUpbutton"
+            android:id="@+id/loginbutton"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
