@@ -26,57 +26,67 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        mAuth = FirebaseAuth.getInstance();
-        email = findViewById(R.id.emaileditText);
-        password = findViewById(R.id.passwordeditText);
-        signupBtn = findViewById(R.id.loginbutton);
-        signinBtn = findViewById(R.id.signinbutton);
 
-        signinBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(SignupActivity.this, LoginActivity.class));
-            }
-        });
+        signupBtn = findViewById(R.id.signupbutton);
+         signupBtn.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 Intent intent = new Intent(SignupActivity.this, MainActivity.class);
+                 startActivity(intent);
+             }
+         });
 
-        signupBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Register();
-            }
-        });
-
-    }
-
-    private void Register()
-    {
-        String user = email.getText().toString().trim();
-        String pass = password.getText().toString().trim();
-        if(user.isEmpty())
-        {
-            email.setError("Email can not be empty");
-        }
-        if(pass.isEmpty())
-        {
-            password.setError("Password can not be empty");
-        }
-        else
-        {
-            mAuth.createUserWithEmailAndPassword(user, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                @Override
-                public void onComplete(@NonNull Task<AuthResult> task) {
-                    if(task.isSuccessful())
-                    {
-                        Toast.makeText(SignupActivity.this, "User registered successfully", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(SignupActivity.this, MainActivity.class));
-                    }
-                    else
-                    {
-                        Toast.makeText(SignupActivity.this, "Registration Failed"+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                    }
-
-                }
-            });
-        }
+//        mAuth = FirebaseAuth.getInstance();
+//        email = findViewById(R.id.emaileditText);
+//        password = findViewById(R.id.passwordeditText);
+//        signupBtn = findViewById(R.id.signupbutton);
+//        signinBtn = findViewById(R.id.signinbutton);
+//
+//        signinBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(SignupActivity.this, LoginActivity.class));
+//            }
+//        });
+//
+//        signupBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Register();
+//            }
+//        });
+//
+//    }
+//
+//    private void Register()
+//    {
+//        String user = email.getText().toString().trim();
+//        String pass = password.getText().toString().trim();
+//        if(user.isEmpty())
+//        {
+//            email.setError("Email can not be empty");
+//        }
+//        if(pass.isEmpty())
+//        {
+//            password.setError("Password can not be empty");
+//        }
+//        else
+//        {
+//            mAuth.createUserWithEmailAndPassword(user, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+//                @Override
+//                public void onComplete(@NonNull Task<AuthResult> task) {
+//                    if(task.isSuccessful())
+//                    {
+//                        Toast.makeText(SignupActivity.this, "User registered successfully", Toast.LENGTH_SHORT).show();
+//                        startActivity(new Intent(SignupActivity.this, MainActivity.class));
+//                    }
+//                    else
+//                    {
+//                        Toast.makeText(SignupActivity.this, "Registration Failed"+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+//                    }
+//
+//                }
+//            });
+//        }
     }
 }
