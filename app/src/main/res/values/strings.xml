@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Tweelert</string>
     <string name="get_the_analysis">....Get the Analysis...</string>
+    <string name="sentiment_analysis">Sentiment Analysis</string>
 </resources>

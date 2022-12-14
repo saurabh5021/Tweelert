@@ -27,7 +27,7 @@
         android:layout_marginTop="40dp"
         android:fontFamily="@font/andika_new_basic_bold"
         android:gravity="center"
-        android:text="Sentiment Analysis"
+        android:text="@string/sentiment_analysis"
         android:textColor="#7A6666"
         android:textSize="28sp"
         tools:layout_editor_absoluteX="74dp"
