@@ -10,9 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="67dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
         android:background="#3B87C1"
         android:backgroundTint="#446AAC"
         android:orientation="horizontal"

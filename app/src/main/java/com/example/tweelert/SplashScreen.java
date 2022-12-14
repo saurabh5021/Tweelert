@@ -21,15 +21,6 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        topAnim = AnimationUtils.loadAnimation(this, R.anim.top_animation);
-        bottomAnim = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);
-        logo = findViewById(R.id.logo);
-        title = findViewById(R.id.title);
-        tag = findViewById(R.id.tagline);
-
-        logo.setAnimation(topAnim);
-        title.setAnimation(bottomAnim);
-        tag.setAnimation(bottomAnim);
 
         new Handler().postDelayed(new Runnable() {
             @Override
