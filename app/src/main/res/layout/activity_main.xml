@@ -10,7 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="67dp"
-        android:layout_marginRight="1dp"
+        android:layout_marginEnd="1dp"
         android:background="#3B87C1"
         android:backgroundTint="#446AAC"
         android:orientation="horizontal"
@@ -37,7 +37,8 @@
             android:layout_gravity="center|end"
             android:layout_weight="1"
             android:scaleType="matrix"
-            app:srcCompat="@android:drawable/ic_popup_reminder" />
+            app:srcCompat="@android:drawable/ic_popup_reminder"
+            android:contentDescription="TODO" />
     </LinearLayout>
 
     <LinearLayout
@@ -66,16 +67,17 @@
             app:startIconTintMode="src_atop">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/emaileditText"
+                android:id="@+id/movieeditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter Movie Name"
                 android:inputType="textShortMessage"
-                android:textColorHint="#616161" />
+                android:textColorHint="#616161"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/loginbutton"
+            android:id="@+id/searchBtn"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
