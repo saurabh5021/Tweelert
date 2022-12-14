@@ -5,6 +5,7 @@
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     android:background="#283593">
 
 
@@ -12,20 +13,17 @@
         android:id="@+id/imageView"
         android:layout_width="255dp"
         android:layout_height="205dp"
-        android:layout_marginStart="78dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="78dp"
+        android:layout_marginTop="52dp"
         android:contentDescription="TODO"
         android:elevation="30dp"
         android:src="@drawable/signup"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:orientation="vertical"
@@ -68,9 +66,8 @@
             android:id="@+id/textInputLayout"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="56dp"
+            android:layout_gravity="center"
             android:layout_marginTop="22dp"
-            android:layout_marginEnd="55dp"
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
             app:boxStrokeColor="#0C23BA"
@@ -148,11 +145,11 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="377dp"
+        android:layout_width="match_parent"
         android:layout_height="61dp"
-        android:layout_marginStart="18dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="36dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:layout_marginBottom="26dp"
         android:fontFamily="@font/andika_new_basic_bold"
         android:padding="5dp"
