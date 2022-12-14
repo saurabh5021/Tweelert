@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/alata</item>
+        <item>@font/amaranth</item>
         <item>@font/andika_new_basic_bold</item>
         <item>@font/inika_bold</item>
     </array>
