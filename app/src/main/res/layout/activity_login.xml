@@ -5,16 +5,15 @@
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
     android:background="#283593"
-    tools:context=".LoginActivity">
-
+    tools:context=".LoginActivity"
+    >
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="255dp"
         android:layout_height="205dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="60dp"
         android:contentDescription="TODO"
         android:elevation="30dp"
         android:src="@drawable/login"
@@ -28,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/loginbutton"
+        app:layout_constraintBottom_toTopOf="@+id/loginbutton4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,7 +75,7 @@
             app:boxStrokeWidth="4dp"
             app:boxStrokeWidthFocused="2dp"
             app:endIconMode="clear_text"
-            app:layout_constraintBottom_toTopOf="@+id/loginbutton"
+            app:layout_constraintBottom_toTopOf="@+id/loginbutton4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
@@ -88,12 +87,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter Password"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:textColorHint="#616161"
+                tools:ignore="TextContrastCheck" />
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
     <Button
-        android:id="@+id/loginbutton2"
+        android:id="@+id/loginbutton4"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="157dp"
@@ -114,46 +115,43 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
+        android:layout_marginStart="95dp"
         android:layout_marginTop="15dp"
-        android:layout_marginRight="2dp"
-        android:layout_marginBottom="112dp"
+        android:layout_marginBottom="115dp"
         android:fontFamily="@font/andika_new_basic_bold"
-        android:text="Haven't Registered Yet?"
+        android:text="Haven't Registered? "
         android:textColor="#F8F6F6"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/signupbutton"
+        app:layout_constraintEnd_toStartOf="@+id/textView13"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginbutton"
+        app:layout_constraintTop_toBottomOf="@+id/loginbutton4"
         app:layout_constraintVertical_bias="0.23" />
 
-    <Button
-        android:id="@+id/signupbutton"
+    <TextView
+        android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="124dp"
-        android:layout_marginBottom="104dp"
-        android:backgroundTint="#148814"
+        android:layout_marginBottom="115dp"
         android:fontFamily="@font/andika_new_basic_bold"
         android:text="Sign-up"
-        android:textColor="#F8F6F6"
+        android:textColor="#E4B3B3"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/loginbutton2"
+        app:layout_constraintTop_toBottomOf="@+id/loginbutton4"
         app:layout_constraintVertical_bias="0.23" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="match_parent"
+        android:layout_width="377dp"
         android:layout_height="61dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginStart="18dp"
         android:layout_marginTop="36dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="26dp"
         android:fontFamily="@font/andika_new_basic_bold"
         android:padding="5dp"
@@ -168,6 +166,3 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.678" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-

@@ -1,49 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:layout_gravity="center"
+    android:id="@+id/constraintLayout"
     android:background="#283593"
-    tools:context=".SignupActivity">
-
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="255dp"
         android:layout_height="205dp"
         android:layout_marginTop="52dp"
+        android:src="@drawable/signup"
         android:contentDescription="TODO"
         android:elevation="30dp"
-        android:src="@drawable/signup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <LinearLayout
+        android:orientation="vertical"
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/loginbutton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.515">
 
         <com.google.android.material.textfield.TextInputLayout
+            android:layout_gravity="center"
             android:id="@+id/textInputLayout2"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
-            app:boxStrokeColor="#0C23BA"
-            app:boxStrokeErrorColor="#A91C1E85"
+            app:boxStrokeColor="#0c23ba"
+            app:boxStrokeErrorColor="#a91c1e85"
             app:boxStrokeWidth="4dp"
             app:boxStrokeWidthFocused="2dp"
             app:endIconMode="clear_text"
@@ -55,24 +53,25 @@
             app:startIconTintMode="src_atop">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:textColorHint="#616161"
                 android:id="@+id/emaileditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter Email"
-                android:inputType="textEmailAddress"
-                android:textColorHint="#616161" />
+                android:inputType="textEmailAddress"/>
+
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:layout_gravity="center"
             android:id="@+id/textInputLayout"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_marginTop="22dp"
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
-            app:boxStrokeColor="#0C23BA"
-            app:boxStrokeErrorColor="#A91C1E85"
+            app:boxStrokeColor="#0c23ba"
+            app:boxStrokeErrorColor="#a91c1e85"
             app:boxStrokeWidth="4dp"
             app:boxStrokeWidthFocused="2dp"
             app:endIconMode="clear_text"
@@ -88,87 +87,83 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter Password"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"/>
         </com.google.android.material.textfield.TextInputLayout>
-    </LinearLayout>
 
+    </LinearLayout>
     <Button
+        android:textSize="16sp"
+        android:textStyle="bold"
         android:id="@+id/loginbutton"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="157dp"
         android:layout_marginTop="60dp"
-        android:layout_marginEnd="160dp"
-        android:backgroundTint="#148814"
-        android:elevation="10dp"
-        android:fontFamily="@font/inika_bold"
         android:text="SignUp"
-        android:textSize="16sp"
-        android:textStyle="bold"
+        android:fontFamily="@font/inika_bold"
+        android:layout_marginStart="157dp"
+        android:layout_marginEnd="160dp"
+        android:elevation="10dp"
+        android:backgroundTint="#148814"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
 
     <TextView
+        android:textStyle="bold"
+        android:textColor="#f8f6f6"
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="95dp"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="115dp"
-        android:fontFamily="@font/andika_new_basic_bold"
         android:text="Already Registered? "
-        android:textColor="#F8F6F6"
-        android:textStyle="bold"
+        android:fontFamily="@font/andika_new_basic_bold"
+        android:layout_marginStart="95dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/signinbutton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginbutton"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.2"/>
 
     <Button
+        android:textStyle="bold"
+        android:textColor="#f8f6f6"
         android:id="@+id/signinbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:layout_marginEnd="124dp"
         android:layout_marginBottom="115dp"
-        android:fontFamily="@font/andika_new_basic_bold"
         android:text="Sign-in"
+        android:fontFamily="@font/andika_new_basic_bold"
+        android:layout_marginEnd="124dp"
         android:backgroundTint="#148814"
-        android:textColor="#F8F6F6"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/loginbutton"
-        app:layout_constraintVertical_bias="0.0"
-
-        />
+        app:layout_constraintVertical_bias="0"/>
 
     <TextView
+        android:textSize="12sp"
+        android:textColor="#f8f8f8"
+        android:textColorHint="#ffffff"
         android:id="@+id/textView4"
+        android:padding="5dp"
         android:layout_width="match_parent"
         android:layout_height="61dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="36dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="26dp"
-        android:fontFamily="@font/andika_new_basic_bold"
-        android:padding="5dp"
         android:text="By using our app,you agree to our Terms and Conditions and Privacy Policy"
-        android:textColor="#F8F8F8"
-        android:textColorHint="#FFFFFF"
-        android:textSize="12sp"
+        android:fontFamily="@font/andika_new_basic_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.678" />
+        app:layout_constraintVertical_bias="0.678"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
