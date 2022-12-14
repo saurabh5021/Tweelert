@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String movieName=movieET.getText().toString();
                 Intent intent = new Intent(MainActivity.this, ResultActivity.class);
+                intent.putExtra("movie",movieName);
                 startActivity(intent);
             }
         });

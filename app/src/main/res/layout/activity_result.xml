@@ -42,6 +42,17 @@
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/movieNameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/amaranth_bold"
+        android:gravity="center"
+        android:text="Drishyam"
+        android:textColor="#063F5E"
+        android:textSize="45sp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
