@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="#283593">
+    android:background="#283593"
+    tools:context=".SignupActivity">
 
 
     <ImageView
@@ -109,6 +110,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -121,13 +123,13 @@
         android:textColor="#F8F6F6"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/signinbutton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginbutton"
-        app:layout_constraintVertical_bias="0.23" />
+        app:layout_constraintVertical_bias="0.2" />
 
-    <TextView
-        android:id="@+id/textView3"
+    <Button
+        android:id="@+id/signinbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -135,13 +137,16 @@
         android:layout_marginBottom="115dp"
         android:fontFamily="@font/andika_new_basic_bold"
         android:text="Sign-in"
-        android:textColor="#E4B3B3"
+        android:backgroundTint="#148814"
+        android:textColor="#F8F6F6"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/loginbutton"
-        app:layout_constraintVertical_bias="0.23" />
+        app:layout_constraintVertical_bias="0.0"
+
+        />
 
     <TextView
         android:id="@+id/textView4"

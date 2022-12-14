@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "940270140568",
+    "project_id": "tweelert-74693",
+    "storage_bucket": "tweelert-74693.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940270140568:android:5f58294357ee1ddfeb64ed",
+        "android_client_info": {
+          "package_name": "com.example.tweelert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940270140568-kgsui12js5o9jaus5bh8thsr13rhe537.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9hkSTZerUn479IgPz3vNtb0ohlzHnPZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940270140568-kgsui12js5o9jaus5bh8thsr13rhe537.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
