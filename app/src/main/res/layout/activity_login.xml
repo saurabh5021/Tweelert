@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="#283593">
+    android:background="#283593"
+    tools:context=".LoginActivity">
 
 
     <ImageView
@@ -27,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/searchBtn"
+        app:layout_constraintBottom_toTopOf="@+id/loginbutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,7 +55,7 @@
             app:startIconTintMode="src_atop">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/movieeditText"
+                android:id="@+id/emaileditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter Email"
@@ -75,7 +76,7 @@
             app:boxStrokeWidth="4dp"
             app:boxStrokeWidthFocused="2dp"
             app:endIconMode="clear_text"
-            app:layout_constraintBottom_toTopOf="@+id/searchBtn"
+            app:layout_constraintBottom_toTopOf="@+id/loginbutton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
@@ -92,7 +93,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/searchBtn"
+        android:id="@+id/loginbutton2"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="157dp"
@@ -113,35 +114,37 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="95dp"
+        android:layout_marginStart="64dp"
         android:layout_marginTop="15dp"
         android:layout_marginRight="2dp"
-        android:layout_marginBottom="115dp"
+        android:layout_marginBottom="112dp"
         android:fontFamily="@font/andika_new_basic_bold"
         android:text="Haven't Registered Yet?"
         android:textColor="#F8F6F6"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/signupbutton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchBtn"
+        app:layout_constraintTop_toBottomOf="@+id/loginbutton"
         app:layout_constraintVertical_bias="0.23" />
 
-    <TextView
-        android:id="@+id/textView3"
+    <Button
+        android:id="@+id/signupbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="124dp"
-        android:layout_marginBottom="115dp"
+        android:layout_marginBottom="104dp"
+        android:backgroundTint="#148814"
         android:fontFamily="@font/andika_new_basic_bold"
         android:text="Sign-up"
-        android:textColor="#E4B3B3"
+        android:textColor="#F8F6F6"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/searchBtn"
+        app:layout_constraintTop_toBottomOf="@+id/loginbutton2"
         app:layout_constraintVertical_bias="0.23" />
 
     <TextView
