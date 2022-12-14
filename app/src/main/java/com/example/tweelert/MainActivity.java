@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,9 +26,15 @@ public class MainActivity extends AppCompatActivity {
                 String movieName=movieET.getText().toString();
                 Intent intent = new Intent(MainActivity.this, ResultActivity.class);
                 intent.putExtra("movie",movieName);
-                startActivity(intent);
+                if(!movieName.equals("")){
+                    startActivity(intent);
+                }
+                else {
+                    Toast.makeText(MainActivity.this, "Please Add a Movie Name", Toast.LENGTH_SHORT).show();
+                }
             }
         });
+
 
     }
 }
