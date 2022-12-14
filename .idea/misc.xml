@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/91930/AndroidStudioProjects/Tweelert/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/91930/AndroidStudioProjects/Tweelert/app/src/main/res/layout/activity_main.xml" value="0.2359375" />
+        <entry key="..\:/Users/91930/AndroidStudioProjects/Tweelert/app/src/main/res/layout/activity_signup.xml" value="0.264" />
       </map>
     </option>
   </component>
