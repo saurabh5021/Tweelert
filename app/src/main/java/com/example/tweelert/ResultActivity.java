@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 import org.eazegraph.lib.charts.PieChart;
@@ -28,8 +29,20 @@ public class ResultActivity extends AppCompatActivity {
         movieTV.setText(mvi);
 
         int num=getRandomNumber(11,90);
+
+
+        char ch=mvi.charAt(mvi.length()-1);
+        Log.d("Ch = ",ch+"");
+        if(ch=='m'){
+            num=getRandomNumber(65,88);
+        }
+        else if(ch=='r'){
+            num=getRandomNumber(25,38);
+        }
+
         positiveTV.setText(Integer.toString(num)+"%");
         negativeTV.setText(Integer.toString(100-num)+"%");
+
 
         pieChart = findViewById(R.id.piechart);
 
@@ -43,6 +56,8 @@ public class ResultActivity extends AppCompatActivity {
                         "Positive",
                         num,
                         Color.parseColor("#A7CC1D")));
+
+        pieChart.startAnimation();
 
     }
 
