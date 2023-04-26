@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#283593"
->
+    tools:context=".LoginActivity"
+    >
 
     <ImageView
         android:id="@+id/imageView"
@@ -165,6 +166,3 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.678" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
