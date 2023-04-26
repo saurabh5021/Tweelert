@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/loginbutton"
+        app:layout_constraintBottom_toTopOf="@+id/signupbutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,7 +75,7 @@
             app:boxStrokeWidth="4dp"
             app:boxStrokeWidthFocused="2dp"
             app:endIconMode="clear_text"
-            app:layout_constraintBottom_toTopOf="@+id/loginbutton"
+            app:layout_constraintBottom_toTopOf="@+id/signupbutton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
@@ -94,7 +94,7 @@
     <Button
         android:textSize="16sp"
         android:textStyle="bold"
-        android:id="@+id/loginbutton"
+        android:id="@+id/signupbutton"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -123,7 +123,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/signinbutton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginbutton"
+        app:layout_constraintTop_toBottomOf="@+id/signupbutton"
         app:layout_constraintVertical_bias="0.2"/>
 
     <Button
@@ -141,7 +141,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/loginbutton"
+        app:layout_constraintTop_toBottomOf="@+id/signupbutton"
         app:layout_constraintVertical_bias="0"/>
 
     <TextView

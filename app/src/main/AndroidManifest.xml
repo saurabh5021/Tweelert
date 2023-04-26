@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Tweelert"
         tools:targetApi="31">
         <activity
+            android:name=".QueryActivity"
+            android:exported="false" />
+        <activity
             android:name=".ResultActivity"
             android:exported="false" />
         <activity
